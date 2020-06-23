@@ -17,9 +17,9 @@ namespace MicroRabbit.Banking.Data.Repository
         {
             this.context = context;
         }
-        public async Task<IEnumerable<Account>> GetAccounts()
+        public IEnumerable<Account> GetAccounts()
         {
-            return await context.Accounts.ToListAsync();
+            return context.Accounts;
         }
     }
 }

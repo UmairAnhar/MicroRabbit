@@ -9,6 +9,6 @@ namespace MicroRabbit.Banking.Domain.Interfaces
 {
     public interface IAccountRepository
     {
-        Task<IEnumerable<Account>> GetAccounts();
+        IEnumerable<Account> GetAccounts();
     }
 }

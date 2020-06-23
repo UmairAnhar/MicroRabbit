@@ -17,9 +17,9 @@ namespace MicroRabbit.Banking.Application.Services
             this.accountRepository = accountRepository;
         }
 
-        public async Task<IEnumerable<Account>> GetAccounts()
+        public IEnumerable<Account> GetAccounts()
         {
-            return await accountRepository.GetAccounts();
+            return accountRepository.GetAccounts();
         }
     }
 }
